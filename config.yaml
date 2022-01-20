@@ -19,7 +19,6 @@ test:
 monitor:
   type:
   - docker
-  - process
   docker:
     name:
       - node0
@@ -28,6 +27,5 @@ monitor:
 
   process:
     - command: node
-      arguments: 
       multiOutput: avg
   interval: 0.5

@@ -9,12 +9,40 @@ import sys,os
 还有很多地址需要修改哦~
 """
 
-#定义docker-compose地址
-fileTocompose = r'./docker-compose.yaml'
+fileName = r'./docker-compose.yaml'
 
-#定义fisco-bocs.json地址
-fileToconfig = r"./config.yaml"
+#--------------------------------confi.yaml--------------------------------#
+configYamldata = """
+---
+test:
+  name: dsfasfasdfsdfa
+  description: This is a helloworld benchmark of FISCO BCOS for caliper
+  clients:
+    type: local
+    number: 1
+  rounds:
+  - label: set
+    description: Test performance of setting name
+    txNumber:
+    - {}
+    rateControl:
+    - type: fixed-rate
+      opts:
+        tps: 1300
+    callback: SC0-set.js
+monitor:
+  type:
+  - docker
+  docker:
+    name:
+{}
+  process:
+    - command: node
+      multiOutput: avg
+  interval: 0.5
+"""
 
+#--------------------------------config.ini--------------------------------#
 configData = """
 [rpc]
     channel_listen_ip=0.0.0.0
@@ -87,12 +115,13 @@ configData = """
     ;outgoing_bandwidth_limit=2
 
 """
+
+#--------------------------------docker-compose.yaml--------------------------------#
 defaultData = """
 version: "3"
 
 services:
 """
-
 addData = """
   node{}:
     image: fiscoorg/fiscobcos:latest
@@ -105,12 +134,12 @@ addData = """
       - /root/benchmarks/xiaoyuetest/nodes/127.0.0.1/node{}/:/data
     deploy:
       resources:
-        limits:
-          cpus: '{}'
-          memory: {}M
-        reservations:
-          cpus: '{}'
-          memory: {}M
+          limits:
+              cpus: '{}'
+              memory: {}M
+          reservations:
+              # cpus: '{}'
+              memory: {}M
     container_name: node{}
     command: /usr/local/bin/fisco-bcos -c config.ini
     {}
@@ -141,7 +170,7 @@ def fixConfigyaml(nodeNum,txNumber,configYamldata):
   for i in range(int(nodeNum)):
     insertData+="      - node{}".format(i)+"\n"
   configYamldata = configYamldata.format(txNumber,insertData)
-  with open(fileToconfig,"w") as w:
+  with open("./config.yaml","w") as w:
     w.write(configYamldata)
 
 
@@ -164,9 +193,9 @@ def main(argv):
     else:
         nodeNum = argv[0]
         limitsCpu = float(argv[1])
-        limitsMemory = float(argv[2])
+        limitsMemory = int(argv[2])
         resCpu = float(argv[3])
-        resMemory = float(argv[4])
+        resMemory = int(argv[4])
         try:
           txNumber = int(argv[5])
         except Exception:
@@ -195,11 +224,11 @@ def main(argv):
     _recoverDefault(nodeNum)
 
 def _recoverDefault(nodeNum):
-    with open(fileTocompose, 'w') as f:
+    with open(fileName, 'w') as f:
         f.write(defaultData)
     for i in range(int(nodeNum)):
         with open("./nodes/127.0.0.1/node{}/config.ini".format(i),"w") as f:
-            f.write("https://x1a0.net 随便写点啥emmm")
+            f.write("https://x1a0.net")
 
 def _insertOne(nodeId1,channelPor,
                                 rpcPort,
@@ -210,8 +239,7 @@ def _insertOne(nodeId1,channelPor,
                                 resCpu,
                                 resMemory,
                                 nodeId3):
-    fixdata = """
-    depends_on:
+    fixdata = """depends_on:
       - "node{}"
     """
 
@@ -243,7 +271,7 @@ def _insertOne(nodeId1,channelPor,
                                           resMemory,
                                           nodeId3,
                                           "")
-    with open(fileTocompose, 'a+') as f:
+    with open(fileName, 'a+') as f:
         f.write(wrData)
 
 
@@ -260,38 +288,6 @@ def fixConfig(nodeNum):
         insertconfig = configData.format(20700+i,7545+i,30700+i,basedata)
         with open("./nodes/127.0.0.1/node{}/config.ini".format(i),"w") as f:
             f.write(insertconfig)
-
-configYamldata = """
----
-test:
-  name: dsfasfasdfsdfa
-  description: This is a helloworld benchmark of FISCO BCOS for caliper
-  clients:
-    type: local
-    number: 1
-  rounds:
-  - label: set
-    description: Test performance of setting name
-    txNumber:
-    - {}
-    rateControl:
-    - type: fixed-rate
-      opts:
-        tps: 1300
-    callback: SC0-set.js
-monitor:
-  type:
-  - docker
-  - process
-  docker:
-    name:
-{}
-  process:
-    - command: node
-      arguments: 
-      multiOutput: avg
-  interval: 0.5
-"""
 
 
 if __name__ == "__main__":
