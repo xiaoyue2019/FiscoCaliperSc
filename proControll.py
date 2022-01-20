@@ -148,7 +148,7 @@ addData = """
 def usage():
     usagetext = '\nUsage:\nparams: nodeNum limCpu limMemo reCpu limMemo txNumber\n' \
                 '\t1. nodenum :\t必填,需要进行压测的节点数量，上限100\n' \
-                '\t2. limcpu  :\t可选,容器CPU的极限值，不填默认为0.1\n' \
+                '\t2. limcpu  :\t可选,容器CPU的极限值，不填默认为0.5\n' \
                 '\t3. limmemo :\t可选,容器内存极限值，不填默认为1024m \n' \
                 '\t4. recpu   :\t可选,容器CPU常规值，不填默认为0.1)\n' \
                 '\t5. limmemo :\t可选,容器内存常规值，不填默认为200m)\n' \
@@ -185,7 +185,7 @@ def main(argv):
 
     elif len(argv) == 1:
         nodeNum = argv[0]
-        limitsCpu = 0.1
+        limitsCpu = 0.5
         limitsMemory = 240
         resCpu = 0.1
         resMemory = 200
