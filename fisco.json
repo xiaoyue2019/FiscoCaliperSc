@@ -1,0 +1,44 @@
+{
+    "caliper": {
+        "blockchain": "fisco-bcos",
+        "command": {
+            "start": "docker-compose --compatibility -f ./docker-compose.yaml up -d; sleep 3s",
+            "end": "docker-compose --compatibility -f ./docker-compose.yaml down"
+        }
+    },
+    "fisco-bcos": {
+        "config": {
+            "privateKey": "bcec428d5205abe0f0cc8a734083908d9eb8563e31f943d760786edf42ad67dd",
+            "account": "0x64fa644d2a694681bd6addd6c5e36cccd8dcdde3"
+        },
+        "network": {
+            "nodes": [
+                {
+                    "ip": "127.0.0.1",
+                    "rpcPort": "7545",
+                    "channelPort": "20700"
+                }
+           ],
+            "authentication": {
+                "key": "./nodes/127.0.0.1/sdk/sdk.key",
+                "cert": "./nodes/127.0.0.1/sdk/sdk.crt",
+                "ca": "./nodes/127.0.0.1/sdk/ca.crt"
+            },
+            "groupID": 1,
+            "timeout": 600000
+        },
+        "smartContracts": [
+            {
+                "id": "xx",
+                "path": "xx.sol",
+                "language": "solidity",
+                "version": "v0"
+            }
+        ]
+    },
+    "info": {
+        "Version": "2.0.0",
+        "Size": "4 Nodes",
+        "Distribution": "Remote Host"
+    }
+}
