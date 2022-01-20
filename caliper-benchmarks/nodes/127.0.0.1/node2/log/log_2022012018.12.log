@@ -1,0 +1,305 @@
+info|2022-01-20 18:12:34.867657|[INITIALIZER][initGlobalConfig],enableCompress=true,compatibilityVersion=2.7.2,versionNumber=34013696,enableStat=false,chainId=1,useSMCrypto=false
+info|2022-01-20 18:12:34.867713|[INITIALIZER][SecureInitializer]loading privateKey
+info|2022-01-20 18:12:34.879976|[INITIALIZER][SecureInitializer]get pub of node,nodeID=73248ea9e23ca36ab5974a73f821fde028d739ea840adfe13dea1fb5fd82babd24b09b7f38b5d66f2a54ce62f7cc2b7c8a63f8f30b176b055fb57c12dd94e0aa
+info|2022-01-20 18:12:34.880081|[INITIALIZER][SecureInitializer]use user certificate,file=conf//node.crt
+info|2022-01-20 18:12:34.880264|[INITIALIZER][SecureInitializer]use ca certificate,file=conf//ca.crt
+info|2022-01-20 18:12:34.880305|[INITIALIZER][SecureInitializer]use ca,file=conf//
+info|2022-01-20 18:12:34.880687|[NETWORK][Host]Connecting to node,endpoint=172.17.0.1:30800
+info|2022-01-20 18:12:34.880732|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30802
+info|2022-01-20 18:12:34.880792|[NETWORK][Host]Connecting to node,endpoint=172.17.0.1:30801
+info|2022-01-20 18:12:34.880830|[NETWORK][Host]Connecting to node,endpoint=172.17.0.1:30802
+info|2022-01-20 18:12:34.880856|[P2P][Service] heartBeat,connected count=0
+info|2022-01-20 18:12:34.880879|[INITIALIZER][RPCInitializer],network_security.check_cert_issuer=true
+info|2022-01-20 18:12:34.880951|[NETWORK][ASIO]asyncResolveConnect,endpoint=172.17.0.1:30800
+info|2022-01-20 18:12:34.881018|[NETWORK][ASIO]asyncResolveConnect,endpoint=172.17.0.1:30801
+info|2022-01-20 18:12:34.881065|[NETWORK][ASIO]asyncResolveConnect,endpoint=172.17.0.1:30802
+info|2022-01-20 18:12:34.881773|[CHANNEL]ChannelRPCServer started
+info|2022-01-20 18:12:34.881784|[INITIALIZER][RPCInitializer]ChannelRPCHttpServer started.
+info|2022-01-20 18:12:34.881788|[INITIALIZER][LedgerInitializer]initConfig
+info|2022-01-20 18:12:34.881796|[LedgerInitializer],groupConfigPath=conf/
+info|2022-01-20 18:12:34.956278|[NETWORK][Host]P2P Recv Connect, From=172.28.0.1:35534
+info|2022-01-20 18:12:34.956348|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30802
+info|2022-01-20 18:12:34.956449|[INITIALIZER][initSingleLedger] [GroupId], LedgerConstructor:  1,configFileName=conf/group.1.genesis,dataDir=data/
+info|2022-01-20 18:12:34.956564|[g:1][LedgerParam][parseGenesisConfig]initConsensusConfig/initStorageConfig/initTxConfig,configFile=conf/group.1.genesis
+info|2022-01-20 18:12:34.956596|[g:1][LedgerParam][initConsensusConfig],type=pbft,consensusTimeout=3,maxTxNum=1000,txGasLimit=300000000
+info|2022-01-20 18:12:34.956616|[g:1][LedgerParam][parsePublicKeyListOfSection],sectionName=consensus,it.first=89020c572008d2262452128ac9247024a08f84520a910d01cbfb219f6198bc830a88f1eff3ff1855848a9da389f89b75c6cbb7d1baadb637785a3639b4050908
+info|2022-01-20 18:12:34.956634|[g:1][LedgerParam][parsePublicKeyListOfSection],sectionName=consensus,it.first=91bbd205757474e31e38f3d528374525ac8d79b3fd1b4209b03ee639540a4f63c08065cdde8fefd0c3904194ec122b4810cdef96d7cb85afb6f833c6e7bd5e1c
+info|2022-01-20 18:12:34.956649|[g:1][LedgerParam][parsePublicKeyListOfSection],sectionName=consensus,it.first=73248ea9e23ca36ab5974a73f821fde028d739ea840adfe13dea1fb5fd82babd24b09b7f38b5d66f2a54ce62f7cc2b7c8a63f8f30b176b055fb57c12dd94e0aa
+info|2022-01-20 18:12:34.956657|[g:1][LedgerParam][parsePublicKeyListOfSection],totalPubKeySize=3
+info|2022-01-20 18:12:34.956676|[g:1][LedgerParam][max_block_range],maxBlockRange=0,maxBlockPerProcess=3
+info|2022-01-20 18:12:34.956687|[g:1][LedgerParam][parseGenesisConfig],timestamp=1642673541000
+info|2022-01-20 18:12:34.956699|[g:1][LedgerParam]setEVMFlags,enableFreeStorageVMSchedule=false,evmFlags=0
+info|2022-01-20 18:12:34.956720|[g:1][LedgerParam]store evmFlag,evmFlag=0
+info|2022-01-20 18:12:34.956729|[g:1][LedgerParam]store consensus time,consensusTimeout=3
+info|2022-01-20 18:12:34.956735|[g:1][LedgerParam][initMark],genesisMark=1-89020c572008d2262452128ac9247024a08f84520a910d01cbfb219f6198bc830a88f1eff3ff1855848a9da389f89b75c6cbb7d1baadb637785a3639b4050908,91bbd205757474e31e38f3d528374525ac8d79b3fd1b4209b03ee639540a4f63c08065cdde8fefd0c3904194ec122b4810cdef96d7cb85afb6f833c6e7bd5e1c,73248ea9e23ca36ab5974a73f821fde028d739ea840adfe13dea1fb5fd82babd24b09b7f38b5d66f2a54ce62f7cc2b7c8a63f8f30b176b055fb57c12dd94e0aa,-pbft-storage-0-1000-300000000-3
+info|2022-01-20 18:12:34.956742|[g:1][LedgerParam][initIniConfig]initTxPoolConfig/initSyncConfig/initTxExecuteConfig,configFile=conf/group.1.ini
+info|2022-01-20 18:12:34.956898|[g:1][LedgerParam][initStorageConfig],stateType=storage,storageDB=rocksdb,storagePath=data//group1/block/RocksDB,baseDir=data//group1,dbtype=mysql,dbip=127.0.0.1,dbport=3306,dbcharset=utf8mb4,initconnections=15,maxconnections=50,scrollThreshold=2000
+info|2022-01-20 18:12:34.956919|[g:1][LedgerParam][initTxPoolConfig],txPoolLimit=150000,memorySizeLimit(MB)=512,notifyWorkerNum=2
+info|2022-01-20 18:12:34.956932|[g:1][LedgerParam][initSyncConfig],idleWaitMs=200
+info|2022-01-20 18:12:34.956945|[g:1][LedgerParam][initSyncConfig],enableSendTxsByTree=true,enableSendBlockStatusByTree=true
+info|2022-01-20 18:12:34.956957|[g:1][LedgerParam][initSyncConfig],gossipInterval=1000
+info|2022-01-20 18:12:34.956970|[g:1][LedgerParam][initSyncConfig],enableSendBlockStatusByTree=true,gossipInterval=1000,gossipPeers=3,syncTreeWidth=3,maxQueueSizeForBlockSync=536870912,txsStatusGossipMaxPeers=5
+info|2022-01-20 18:12:34.956980|[g:1][LedgerParam][InitTxExecuteConfig],enableParallel=true
+info|2022-01-20 18:12:34.956999|[g:1][LedgerParam][initConsensusIniConfig],maxTTL=2,minBlockGenerationTime=500,enablDynamicBlockSize=true,blockSizeIncreaseRatio=0.5,enableTTLOptimize=true,enablePrepareWithTxsHash=true
+info|2022-01-20 18:12:34.957032|[g:1][LedgerParam][initRPBFTConsensusIniConfig],broadcastPrepareByTree=true,prepareStatusBroadcastPercent=33,maxRequestMissedTxsWaitTime=100,maxRequestPrepareWaitTime=100
+info|2022-01-20 18:12:34.957041|[g:1][LedgerParam][initFlowControlConfig],maxQPS=9223372036854775807,outGoingBandwidth(Bytes)=9223372036854775807
+info|2022-01-20 18:12:34.957047|[g:1][LedgerParam]parseSDKAllowList,sdkAllowList=[],enableSDKAllowListControl=false
+info|2022-01-20 18:12:34.957071|[g:1][LEDGER][initLedger][DBInitializer]
+info|2022-01-20 18:12:34.957079|[g:1][LEDGER]setSDKAllowList,groupId=1,sdkAllowListSize=0
+info|2022-01-20 18:12:34.957086|[g:1][CHANNEL]registerSDKAllowListByGroupId,groupId=1,size=0
+info|2022-01-20 18:12:34.957093|[g:1][CHANNEL]Disable group-level sdk permission control for sdk allowlist is empty
+info|2022-01-20 18:12:34.957102|[g:1][DBINITIALIZER] [initStorageDB]
+info|2022-01-20 18:12:34.957127|[g:1][DBINITIALIZER] [initRocksDBStorage]
+info|2022-01-20 18:12:34.957303|[g:1][ROCKSDB]open rocksDB handler,path=data//group1/block/RocksDB
+info|2022-01-20 18:12:34.963586|[NETWORK][Host]handshakeClient succ,local endpoint=172.28.0.4:44228
+info|2022-01-20 18:12:34.963619|[NETWORK][Host]startPeerSession, Remote=172.17.0.1:30801,local endpoint=172.28.0.4:44228,nodeID=91bbd205...
+info|2022-01-20 18:12:34.963676|[P2P][Service] Connection established,nodeID=91bbd205...,endpoint=172.17.0.1:30801
+info|2022-01-20 18:12:34.966960|[NETWORK][Host]handshakeClient succ,local endpoint=172.28.0.4:38540
+info|2022-01-20 18:12:34.967007|[NETWORK][Host]startPeerSession, Remote=172.17.0.1:30800,local endpoint=172.28.0.4:38540,nodeID=89020c57...
+info|2022-01-20 18:12:34.967063|[P2P][Service] Connection established,nodeID=89020c57...,endpoint=172.17.0.1:30800
+info|2022-01-20 18:12:34.969863|[NETWORK][Host]handshakeServer succ,remote endpoint=172.28.0.1:35534
+info|2022-01-20 18:12:34.969894|[NETWORK][Host]startPeerSession, Remote=172.28.0.1:35534,local endpoint=172.28.0.4:30802,nodeID=73248ea9...
+info|2022-01-20 18:12:34.970093|[NETWORK][Host]handshakeClient succ,local endpoint=172.28.0.4:46404
+info|2022-01-20 18:12:34.970112|[NETWORK][Host]startPeerSession, Remote=172.17.0.1:30802,local endpoint=172.28.0.4:46404,nodeID=73248ea9...
+info|2022-01-20 18:12:34.972341|[g:1][g:1][STORAGE][CachedStorage]Init flushStorage thread
+info|2022-01-20 18:12:34.972438|[g:1][DBINITIALIZER] [init CachedStorage],maxCapacity=32,maxForwardBlock=10
+info|2022-01-20 18:12:34.972448|[g:1][LEDGER][initLedger][initBlockChain]
+info|2022-01-20 18:12:34.972565|[g:1][LEDGER]set enableHexBlock to be false,version=34013696
+info|2022-01-20 18:12:34.972582|[g:1][BLOCKCHAIN][#checkAndBuildGenesisBlock],shouldBuild=true
+warning|2022-01-20 18:12:34.972645|[g:1][BLOCKCHAIN][getBlock]Can't find block,number=0
+info|2022-01-20 18:12:34.972728|[g:1][BLOCKCHAIN]init consensus timeout,consensus_timeout=3
+info|2022-01-20 18:12:34.973105|[g:1][g:1][STORAGE][CachedStorage]commit: 5 num: 0
+info|2022-01-20 18:12:34.973223|[g:1][g:1][STORAGE][CachedStorage]Submited block task: 0, current syncd block: 0
+info|2022-01-20 18:12:34.973232|[g:1][g:1][STORAGE][CachedStorage]Start commit block: 0 to backend storage
+info|2022-01-20 18:12:34.973251|[g:1][BLOCKCHAIN][#checkAndBuildGenesisBlock]Insert the 0th block
+info|2022-01-20 18:12:34.973277|[g:1][LEDGER][initLedger]initBlockChain SUCC
+info|2022-01-20 18:12:34.973438|[g:1][DBINITIALIZER] [createStateFactory],type=storage
+info|2022-01-20 18:12:34.973451|[g:1][DBINITIALIZER] createStorageState SUCC
+info|2022-01-20 18:12:34.973458|[g:1][DBINITIALIZER] [createStateFactory SUCC]
+info|2022-01-20 18:12:34.973462|[g:1][DBINITIALIZER] createExecutiveContext...
+info|2022-01-20 18:12:34.973486|[g:1][LEDGER]createGasMetric,vmFlagType=0
+info|2022-01-20 18:12:34.973497|[g:1][LEDGER]createGasMetric
+info|2022-01-20 18:12:34.973506|[g:1][DBINITIALIZER] create precompiledGasFactory and precompiledResultFactory
+info|2022-01-20 18:12:34.973510|[g:1][DBINITIALIZER] createExecutiveContext SUCC
+info|2022-01-20 18:12:34.973516|[g:1][DBINITIALIZER] [setSyncNumForCachedStorage],syncNum=0
+info|2022-01-20 18:12:34.973523|[g:1][LEDGER][initNetworkBandWidthLimiter: outGoingBandwidthLimit has been disabled],groupId=1
+info|2022-01-20 18:12:34.973529|[g:1][LEDGER][QPSLimit has been disabled],groupId=1
+info|2022-01-20 18:12:34.973534|[g:1][LEDGER][initLedger][initBlockVerifier]
+info|2022-01-20 18:12:34.973539|[g:1][LEDGER][initLedger][initBlockVerifier SUCC],evmFlags=0
+info|2022-01-20 18:12:34.973544|[g:1][LEDGER][initLedger][initTxPool],txPoolLimit=150000
+info|2022-01-20 18:12:34.973657|[g:1][LEDGER][initLedger]initTxPool SUCC
+info|2022-01-20 18:12:34.973665|[g:1][LEDGER][initLedger][initSync],idleWaitMs=200,gossipInterval=1000,gossipPeers=3
+info|2022-01-20 18:12:34.973670|[g:1][LEDGER]Init sync master,enableSendBlockStatusByTree=true,enableSendTxsByTree=true
+info|2022-01-20 18:12:34.973765|[g:1][g:1][STORAGE][CachedStorage]
+---------------------------------------------------------------------
+Commit block: 0 to backend storage finished, current cached block: 0
+Flush elapsed time: 0.0005s
+---------------------------------------------------------------------
+
+info|2022-01-20 18:12:34.974060|[g:1][LEDGER][initLedger]initSync SUCC
+info|2022-01-20 18:12:34.974068|[g:1][LEDGER][initLedger][consensusInitFactory]
+info|2022-01-20 18:12:34.974072|[g:1][LEDGER][initLedger][createPBFTSealer]
+info|2022-01-20 18:12:34.974075|[g:1][LEDGER][initLedger][createPBFTSealer],baseDir=data//group1,Protocol=65544
+info|2022-01-20 18:12:34.974084|[g:1][LEDGER][initLedger]createPBFTSealer for PBFT or rPBFT,consensusType=pbft
+info|2022-01-20 18:12:34.974088|[g:1][LEDGER]createConsensusEngine: create PBFTEngine
+info|2022-01-20 18:12:34.974093|[g:1][CONSENSUS][PBFT]Register handler for PBFTEngine
+info|2022-01-20 18:12:34.974334|[g:1][CONSENSUS][PBFT]setMinBlockGenerationTime,minBlockGenerationTime=500,consensusTime=1000
+info|2022-01-20 18:12:34.974343|[g:1][LEDGER][initEventLogFilterManager]initEventLogFilterManager SUCC
+info|2022-01-20 18:12:34.974349|[LedgerInitializer init group succ],groupID=1
+info|2022-01-20 18:12:34.974657|[INITIALIZER][RPCInitializer JsonrpcHttpServer started],jsonrpc_IP=0.0.0.0,jsonrpc_listen_port=7647,ipv6=false
+info|2022-01-20 18:12:34.974671|[g:1][LEDGER]startAll...
+info|2022-01-20 18:12:34.974893|[g:1][GossipBlockStatus]start GossipBlockStatus succ
+info|2022-01-20 18:12:34.974924|[g:1][CONSENSUS][ConsensusEngine][Start ConsensusEngineBase]
+info|2022-01-20 18:12:34.975064|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=0,sealerIdx=0,hash=bd4d9c06...,next=1,tx=0,nodeIdx=0
+info|2022-01-20 18:12:34.975157|[g:1][ROCKSDB]open rocksDB handler,path=data//group1/pbftMsgBackup/RocksDB
+info|2022-01-20 18:12:35.056362|[g:1][NodeTimeMaintenance]updateTimeInfo: update median time offset,updatedMedianTimeOffset=-79,peer=91bbd205...,peerTime=1642673554977,peerOffset=-79,utcTime=1642673555056
+info|2022-01-20 18:12:35.068043|[g:1][CONSENSUS][PBFT][PBFT init env successfully]
+info|2022-01-20 18:12:35.068057|[g:1][CONSENSUS][PBFT][Start PBFTEngine...]
+info|2022-01-20 18:12:35.068061|[g:1][CONSENSUS][SEALER][Start sealer module]
+info|2022-01-20 18:12:35.068173|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=0,sealerIdx=0,hash=bd4d9c06...,next=1,tx=0,nodeIdx=0
+info|2022-01-20 18:12:35.068295|[g:1][EVENT][EventLogFilterManager]start,m_maxBlockRange=0,m_maxBlockPerLoopFilter=3
+info|2022-01-20 18:12:35.088075|[g:1][NodeTimeMaintenance]updateTimeInfo: update median time offset,updatedMedianTimeOffset=-40,peer=89020c57...,peerTime=1642673555087,peerOffset=-1,utcTime=1642673555088
+info|2022-01-20 18:12:35.974981|[g:1][CONSENSUS][SEALER]++++++++++++++++ Generating seal on,blkNum=1,tx=0,nodeIdx=0,hash=a06ce2ec...
+info|2022-01-20 18:12:35.985379|[g:1][CONSENSUS][PBFT]Trigger fast-viewchange,view=0,toView=1,minView=2,INFO=,reqNum=0,curNum=0,GenIdx=1,Cview=2,view=0,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=bd4d9c06...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:35.985594|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=2,nodeIdx=0,changeCycle=1,myNode=73248ea9...,timecost=0.194
+info|2022-01-20 18:12:35.985936|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=0,cur_changeCycle=1,curView=0,view=2
+info|2022-01-20 18:12:37.029881|[g:1][CONSENSUS]addRawPrepare,height=1,reqIdx=2,hash=e29bfe86...,time=0
+info|2022-01-20 18:12:37.030105|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=2,toView=3,nodeIdx=0,changeCycle=1,myNode=73248ea9...,timecost=0.187
+info|2022-01-20 18:12:37.030722|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=2,cur_changeCycle=1,curView=2,view=3
+info|2022-01-20 18:12:38.030582|[g:1][CONSENSUS][SEALER]++++++++++++++++ Generating seal on,blkNum=1,tx=0,nodeIdx=0,hash=e3516900...
+info|2022-01-20 18:12:38.030986|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=3,toView=4,nodeIdx=0,changeCycle=1,myNode=73248ea9...,timecost=0.216
+info|2022-01-20 18:12:38.032286|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=3,cur_changeCycle=1,curView=3,view=4
+info|2022-01-20 18:12:38.387296|[NETWORK][Host]P2P Recv Connect, From=172.28.0.1:35706
+info|2022-01-20 18:12:38.387351|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30802
+info|2022-01-20 18:12:38.395796|[NETWORK][Host]handshakeServer succ,remote endpoint=172.28.0.1:35706
+info|2022-01-20 18:12:38.395830|[NETWORK][Host]startPeerSession, Remote=172.28.0.1:35706,local endpoint=172.28.0.4:30802,nodeID=89020c57...
+info|2022-01-20 18:12:38.534128|[g:1][CONSENSUS][PartiallyPBFTReqCache]addPartiallyRawPrepare,height=1,reqIdx=1,hash=88bff1f7...
+info|2022-01-20 18:12:38.534392|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=1,parentHash=bd4d9c06c00c19e0bc4c26ef176dc5467a27553333e0a3f12654200a0cdaaf2f,parentNum=0,parentStateRoot=0000000000000000000000000000000000000000000000000000000000000000
+info|2022-01-20 18:12:38.534729|[g:1][STORAGE][MemoryTableFactory2]createTable,table name=c_abafb53c14526dfc73f7437d1b4430cb3cd97477,keyField=key,valueField=value
+info|2022-01-20 18:12:38.534853|[g:1][STORAGE][MemoryTableFactory2]createTable,table name=c_6ce7b51085b1ef1803dd86a698a4cf0cdd94fcb6,keyField=key,valueField=value
+info|2022-01-20 18:12:38.535697|[g:1][CONSENSUS][PBFT]execBlock,blkNum=1,reqIdx=1,hash=7e7d8fb0...,nodeIdx=0,myNode=73248ea9...,decodeCost=0,checkCost=0,notifyCost=0,noteSealingCost=0,currentCycle=1,verifyAndSetSenderCost=0,execCost=1,execPerTx=1,totalCost=1
+info|2022-01-20 18:12:38.536066|[g:1][CONSENSUS][PBFT]handlePrepareMsg Succ,Timecost=1.781,INFO=handlePartiallyPrepare,reqIdx=1,view=4,reqNum=1,curNum=0,consNum=1,hash=88bff1f7...,nodeIdx=0,myNode=73248ea9...,curChangeCycle=1
+info|2022-01-20 18:12:38.536319|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.236,INFO=handleSignMsg,num=1,curNum=0,GenIdx=1,Sview=4,view=4,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=7e7d8fb0...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:38.536597|[g:1][CONSENSUS][PBFT]checkAndCommit: backup/updateCommittedPrepare,reqNum=1,hash=88bff1f7...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:38.536773|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.438,INFO=handleSignMsg,num=1,curNum=0,GenIdx=2,Sview=4,view=4,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=7e7d8fb0...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:38.537215|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=1,curNum=0,GenIdx=2,Cview=4,view=4,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=7e7d8fb0...,nodeIdx=0,myNode=73248ea9...,Timecost=0.239
+info|2022-01-20 18:12:38.537458|[g:1][CONSENSUS][PBFT]checkAndSave: CommitReq enough,prepareHeight=1,commitSize=3,hash=7e7d8fb0...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:38.537998|[g:1][g:1][STORAGE][CachedStorage]commit: 9 num: 1
+info|2022-01-20 18:12:38.538362|[g:1][g:1][STORAGE][CachedStorage]Submited block task: 1, current syncd block: 0
+info|2022-01-20 18:12:38.538367|[g:1][g:1][STORAGE][CachedStorage]Start commit block: 1 to backend storage
+info|2022-01-20 18:12:38.538474|[g:1]Push block notify: 1-1
+info|2022-01-20 18:12:38.538653|[g:1][g:1][STORAGE][CachedStorage]
+---------------------------------------------------------------------
+Commit block: 1 to backend storage finished, current cached block: 1
+Flush elapsed time: 0.0003s
+---------------------------------------------------------------------
+
+info|2022-01-20 18:12:38.538924|[g:1][CONSENSUS][PBFT]CommitBlock Succ,prepareHeight=1,reqIdx=1,hash=7e7d8fb0...,nodeIdx=0,myNode=73248ea9...,genSigTimeCost=0,commitBlockTimeCost=1,dropTxsTimeCost=0,noteSealingTimeCost=0,totalTimeCost=1
+info|2022-01-20 18:12:38.538943|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=1,curNum=0,GenIdx=1,Cview=4,view=4,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=7e7d8fb0...,nodeIdx=0,myNode=73248ea9...,Timecost=1.714
+info|2022-01-20 18:12:38.539053|[g:1][CONSENSUS][SEALER]increase maxNoTimeoutTx,maxNoTimeoutTx=1
+info|2022-01-20 18:12:38.539067|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=1,sealerIdx=1,hash=7e7d8fb0...,next=2,tx=1,nodeIdx=0
+info|2022-01-20 18:12:39.539486|[g:1][CONSENSUS]addRawPrepare,height=2,reqIdx=1,hash=edac9cad...,time=0
+info|2022-01-20 18:12:39.539699|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=1,nodeIdx=0,changeCycle=1,myNode=73248ea9...,timecost=0.166
+info|2022-01-20 18:12:39.540301|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=0,cur_changeCycle=1,curView=0,view=1
+info|2022-01-20 18:12:40.541821|[g:1][CONSENSUS]addRawPrepare,height=2,reqIdx=2,hash=c2f8209b...,time=0
+info|2022-01-20 18:12:40.542076|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=1,toView=2,nodeIdx=0,changeCycle=1,myNode=73248ea9...,timecost=0.219
+info|2022-01-20 18:12:40.542727|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=1,cur_changeCycle=1,curView=1,view=2
+info|2022-01-20 18:12:41.471184|[NETWORK][Host]P2P Recv Connect, From=172.28.0.1:35856
+info|2022-01-20 18:12:41.471235|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30802
+info|2022-01-20 18:12:41.476841|[NETWORK][Host]handshakeServer succ,remote endpoint=172.28.0.1:35856
+info|2022-01-20 18:12:41.476880|[NETWORK][Host]startPeerSession, Remote=172.28.0.1:35856,local endpoint=172.28.0.4:30802,nodeID=91bbd205...
+info|2022-01-20 18:12:41.543149|[g:1][CONSENSUS][SEALER]++++++++++++++++ Generating seal on,blkNum=2,tx=0,nodeIdx=0,hash=42405931...
+info|2022-01-20 18:12:41.543553|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=2,toView=3,nodeIdx=0,changeCycle=1,myNode=73248ea9...,timecost=0.222
+info|2022-01-20 18:12:41.544817|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=2,cur_changeCycle=1,curView=2,view=3
+info|2022-01-20 18:12:42.387315|[g:1][CONSENSUS][PartiallyPBFTReqCache]addPartiallyRawPrepare,height=2,reqIdx=1,hash=d3d68761...
+info|2022-01-20 18:12:42.387542|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=2,parentHash=7e7d8fb06843e02da81b79d8893ed6e50a7ca650b9d2fbbc777f8b95838f9524,parentNum=1,parentStateRoot=c2d7f2347b7993bbfc7a1bc85bbec3f430fa510370f1d679b57cae29ece73e0d
+info|2022-01-20 18:12:42.388560|[g:1][CONSENSUS][PBFT]execBlock,blkNum=2,reqIdx=1,hash=77717dd4...,nodeIdx=0,myNode=73248ea9...,decodeCost=0,checkCost=0,notifyCost=0,noteSealingCost=0,currentCycle=1,verifyAndSetSenderCost=0,execCost=1,execPerTx=1,totalCost=1
+info|2022-01-20 18:12:42.388941|[g:1][CONSENSUS][PBFT]handlePrepareMsg Succ,Timecost=1.552,INFO=handlePartiallyPrepare,reqIdx=1,view=3,reqNum=2,curNum=1,consNum=2,hash=d3d68761...,nodeIdx=0,myNode=73248ea9...,curChangeCycle=1
+info|2022-01-20 18:12:42.389341|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.378,INFO=handleSignMsg,num=2,curNum=1,GenIdx=1,Sview=3,view=3,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=77717dd4...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:42.430666|[g:1][CONSENSUS][PBFT]checkAndCommit: backup/updateCommittedPrepare,reqNum=2,hash=d3d68761...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:42.430854|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.43,INFO=handleSignMsg,num=2,curNum=1,GenIdx=2,Sview=3,view=3,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=77717dd4...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:42.431181|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=2,curNum=1,GenIdx=2,Cview=3,view=3,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=77717dd4...,nodeIdx=0,myNode=73248ea9...,Timecost=0.226
+info|2022-01-20 18:12:42.459787|[g:1][CONSENSUS][PBFT]checkAndSave: CommitReq enough,prepareHeight=2,commitSize=3,hash=77717dd4...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:42.460126|[g:1][g:1][STORAGE][CachedStorage]commit: 7 num: 2
+info|2022-01-20 18:12:42.460286|[g:1][g:1][STORAGE][CachedStorage]Start commit block: 2 to backend storage
+info|2022-01-20 18:12:42.460501|[g:1][g:1][STORAGE][CachedStorage]
+---------------------------------------------------------------------
+Commit block: 2 to backend storage finished, current cached block: 2
+Flush elapsed time: 0.0002s
+---------------------------------------------------------------------
+
+info|2022-01-20 18:12:42.460590|[g:1][g:1][STORAGE][CachedStorage]Submited block task: 2, current syncd block: 2
+info|2022-01-20 18:12:42.460648|[g:1]Push block notify: 1-2
+info|2022-01-20 18:12:42.460733|[g:1][CONSENSUS][PBFT]CommitBlock Succ,prepareHeight=2,reqIdx=1,hash=77717dd4...,nodeIdx=0,myNode=73248ea9...,genSigTimeCost=0,commitBlockTimeCost=1,dropTxsTimeCost=0,noteSealingTimeCost=0,totalTimeCost=1
+info|2022-01-20 18:12:42.460753|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=2,curNum=1,GenIdx=1,Cview=3,view=3,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=77717dd4...,nodeIdx=0,myNode=73248ea9...,Timecost=1.343
+info|2022-01-20 18:12:42.556962|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=2,sealerIdx=1,hash=77717dd4...,next=3,tx=1,nodeIdx=0
+info|2022-01-20 18:12:42.968411|[g:1][CONSENSUS][PartiallyPBFTReqCache]addPartiallyRawPrepare,height=3,reqIdx=2,hash=c662d8f2...
+info|2022-01-20 18:12:42.970176|[g:1][CONSENSUS][PBFT]I am the next leader = 0, filter trans size = 410, total trans = 410
+info|2022-01-20 18:12:43.056412|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=410,num=3,parentHash=77717dd430672b77ecc5bdee42f0bf60e4ab06bfc329cd334d84de2c01d0f245,parentNum=2,parentStateRoot=ed940becda85ba2f31d9317a18566a4dc10c15a61a00ce4099f89cf54f6e269d
+info|2022-01-20 18:12:43.266274|[g:1][CONSENSUS][PBFT]execBlock,blkNum=3,reqIdx=2,hash=45765ecb...,nodeIdx=0,myNode=73248ea9...,decodeCost=0,checkCost=0,notifyCost=0,noteSealingCost=0,currentCycle=0,verifyAndSetSenderCost=86,execCost=210,execPerTx=0.512195,totalCost=296
+info|2022-01-20 18:12:43.266608|[g:1][CONSENSUS][PBFT]handlePrepareMsg Succ,Timecost=296.588,INFO=handlePartiallyPrepare,reqIdx=2,view=0,reqNum=3,curNum=2,consNum=3,hash=c662d8f2...,nodeIdx=0,myNode=73248ea9...,curChangeCycle=0
+info|2022-01-20 18:12:43.266882|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.254,INFO=handleSignMsg,num=3,curNum=2,GenIdx=2,Sview=0,view=0,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=45765ecb...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:43.463198|[g:1][CONSENSUS][PBFT]checkAndCommit: backup/updateCommittedPrepare,reqNum=3,hash=c662d8f2...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:43.463393|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.433,INFO=handleSignMsg,num=3,curNum=2,GenIdx=1,Sview=0,view=0,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=45765ecb...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:43.463634|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=3,curNum=2,GenIdx=2,Cview=0,view=0,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=45765ecb...,nodeIdx=0,myNode=73248ea9...,Timecost=0.219
+info|2022-01-20 18:12:43.463859|[g:1][CONSENSUS][PBFT]checkAndSave: CommitReq enough,prepareHeight=3,commitSize=3,hash=45765ecb...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:43.465426|[g:1][g:1][STORAGE][CachedStorage]commit: 6 num: 3
+info|2022-01-20 18:12:43.465583|[g:1][g:1][STORAGE][CachedStorage]Submited block task: 3, current syncd block: 2
+info|2022-01-20 18:12:43.465597|[g:1][g:1][STORAGE][CachedStorage]Start commit block: 3 to backend storage
+info|2022-01-20 18:12:43.465756|[g:1]Push block notify: 1-3
+info|2022-01-20 18:12:43.466298|[g:1][CONSENSUS][PBFT]CommitBlock Succ,prepareHeight=3,reqIdx=2,hash=45765ecb...,nodeIdx=0,myNode=73248ea9...,genSigTimeCost=0,commitBlockTimeCost=2,dropTxsTimeCost=1,noteSealingTimeCost=0,totalTimeCost=3
+info|2022-01-20 18:12:43.466312|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=3,curNum=2,GenIdx=1,Cview=0,view=0,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=45765ecb...,nodeIdx=0,myNode=73248ea9...,Timecost=2.671
+info|2022-01-20 18:12:43.557262|[g:1][CONSENSUS][SEALER]increase maxNoTimeoutTx,maxNoTimeoutTx=410
+info|2022-01-20 18:12:43.557283|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=3,sealerIdx=2,hash=45765ecb...,next=4,tx=410,nodeIdx=0
+info|2022-01-20 18:12:43.557948|[g:1][g:1][STORAGE][CachedStorage]
+---------------------------------------------------------------------
+Commit block: 3 to backend storage finished, current cached block: 3
+Flush elapsed time: 0.0924s
+---------------------------------------------------------------------
+
+info|2022-01-20 18:12:44.062020|[g:1][CONSENSUS][SEALER]++++++++++++++++ Generating seal on,blkNum=4,tx=353,nodeIdx=0,hash=b4fba969...
+info|2022-01-20 18:12:44.062754|[g:1][CONSENSUS]addRawPrepare,height=4,reqIdx=0,hash=b4fba969...,time=0
+info|2022-01-20 18:12:44.063095|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=353,num=4,parentHash=45765ecb65c54fcbb76a0659f2b936d8b1de0b558c7e5685e37b895c3b5de0c0,parentNum=3,parentStateRoot=0000000000000000000000000000000000000000000000000000000000000000
+info|2022-01-20 18:12:44.264275|[g:1][CONSENSUS][PBFT]execBlock,blkNum=4,reqIdx=0,hash=fa6e3080...,nodeIdx=0,myNode=73248ea9...,decodeCost=0,checkCost=0,notifyCost=0,noteSealingCost=0,currentCycle=0,verifyAndSetSenderCost=1,execCost=201,execPerTx=0.569405,totalCost=202
+info|2022-01-20 18:12:44.264617|[g:1][CONSENSUS][PBFT]handlePrepareMsg Succ,Timecost=201.859,INFO=handlePrepareMsg,reqIdx=0,view=0,reqNum=4,curNum=3,consNum=4,curView=0,fromIp=self,hash=b4fba969...,nodeIdx=0,myNode=73248ea9...,curChangeCycle=0
+info|2022-01-20 18:12:44.264628|[g:1][CONSENSUS][PBFT]generateLocalPrepare,hash=b4fba969...,H=4,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:44.358818|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.391,INFO=handleSignMsg,num=4,curNum=3,GenIdx=2,Sview=0,view=0,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=fa6e3080...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:44.663628|[g:1][CONSENSUS][PBFT]checkAndCommit: backup/updateCommittedPrepare,reqNum=4,hash=b4fba969...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:44.663827|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.462,INFO=handleSignMsg,num=4,curNum=3,GenIdx=1,Sview=0,view=0,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=fa6e3080...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:44.664175|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=4,curNum=3,GenIdx=1,Cview=0,view=0,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=fa6e3080...,nodeIdx=0,myNode=73248ea9...,Timecost=0.225
+info|2022-01-20 18:12:44.664415|[g:1][CONSENSUS][PBFT]checkAndSave: CommitReq enough,prepareHeight=4,commitSize=3,hash=fa6e3080...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:44.665824|[g:1][g:1][STORAGE][CachedStorage]commit: 6 num: 4
+info|2022-01-20 18:12:44.665980|[g:1][g:1][STORAGE][CachedStorage]Submited block task: 4, current syncd block: 3
+info|2022-01-20 18:12:44.666023|[g:1][g:1][STORAGE][CachedStorage]Start commit block: 4 to backend storage
+info|2022-01-20 18:12:44.666188|[g:1]Push block notify: 1-4
+info|2022-01-20 18:12:44.666771|[g:1][CONSENSUS][PBFT]CommitBlock Succ,prepareHeight=4,reqIdx=0,hash=fa6e3080...,nodeIdx=0,myNode=73248ea9...,genSigTimeCost=0,commitBlockTimeCost=2,dropTxsTimeCost=0,noteSealingTimeCost=0,totalTimeCost=2
+info|2022-01-20 18:12:44.666788|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=4,curNum=3,GenIdx=2,Cview=0,view=0,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=fa6e3080...,nodeIdx=0,myNode=73248ea9...,Timecost=2.6
+info|2022-01-20 18:12:44.670365|[g:1][g:1][STORAGE][CachedStorage]
+---------------------------------------------------------------------
+Commit block: 4 to backend storage finished, current cached block: 4
+Flush elapsed time: 0.0043s
+---------------------------------------------------------------------
+
+info|2022-01-20 18:12:44.756590|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=4,sealerIdx=0,hash=fa6e3080...,next=5,tx=353,nodeIdx=0
+info|2022-01-20 18:12:44.880897|[P2P][Service] heartBeat,connected count=2
+info|2022-01-20 18:12:45.260288|[g:1][CONSENSUS][PartiallyPBFTReqCache]addPartiallyRawPrepare,height=5,reqIdx=1,hash=7c54da46...
+info|2022-01-20 18:12:45.261253|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=236,num=5,parentHash=fa6e3080585051324dc5bed2e3ede242303fb4a253d8bf27300f80e558fd432d,parentNum=4,parentStateRoot=0000000000000000000000000000000000000000000000000000000000000000
+info|2022-01-20 18:12:45.361969|[g:1][CONSENSUS][PBFT]execBlock,blkNum=5,reqIdx=1,hash=6897a5c8...,nodeIdx=0,myNode=73248ea9...,decodeCost=0,checkCost=1,notifyCost=0,noteSealingCost=0,currentCycle=0,verifyAndSetSenderCost=0,execCost=100,execPerTx=0.423729,totalCost=101
+info|2022-01-20 18:12:45.362292|[g:1][CONSENSUS][PBFT]handlePrepareMsg Succ,Timecost=101.344,INFO=handlePartiallyPrepare,reqIdx=1,view=0,reqNum=5,curNum=4,consNum=5,hash=7c54da46...,nodeIdx=0,myNode=73248ea9...,curChangeCycle=0
+info|2022-01-20 18:12:45.362556|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.246,INFO=handleSignMsg,num=5,curNum=4,GenIdx=2,Sview=0,view=0,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=6897a5c8...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:45.367213|[g:1][CONSENSUS][PBFT]checkAndCommit: backup/updateCommittedPrepare,reqNum=5,hash=7c54da46...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:45.367413|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.432,INFO=handleSignMsg,num=5,curNum=4,GenIdx=1,Sview=0,view=0,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=6897a5c8...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:45.367792|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=5,curNum=4,GenIdx=2,Cview=0,view=0,fromIdx=2,fromNode=91bbd205...,fromIp=172.17.0.1:30801,hash=6897a5c8...,nodeIdx=0,myNode=73248ea9...,Timecost=0.226
+info|2022-01-20 18:12:45.369783|[g:1][CONSENSUS][PBFT]checkAndSave: CommitReq enough,prepareHeight=5,commitSize=3,hash=6897a5c8...,nodeIdx=0,myNode=73248ea9...
+info|2022-01-20 18:12:45.370422|[g:1][g:1][STORAGE][CachedStorage]commit: 6 num: 5
+info|2022-01-20 18:12:45.370595|[g:1][g:1][STORAGE][CachedStorage]Submited block task: 5, current syncd block: 4
+info|2022-01-20 18:12:45.370631|[g:1][g:1][STORAGE][CachedStorage]Start commit block: 5 to backend storage
+info|2022-01-20 18:12:45.370727|[g:1]Push block notify: 1-5
+info|2022-01-20 18:12:45.371509|[g:1][CONSENSUS][PBFT]CommitBlock Succ,prepareHeight=5,reqIdx=1,hash=6897a5c8...,nodeIdx=0,myNode=73248ea9...,genSigTimeCost=0,commitBlockTimeCost=2,dropTxsTimeCost=0,noteSealingTimeCost=0,totalTimeCost=2
+info|2022-01-20 18:12:45.371535|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=5,curNum=4,GenIdx=1,Cview=0,view=0,fromIdx=1,fromNode=89020c57...,fromIp=172.17.0.1:30800,hash=6897a5c8...,nodeIdx=0,myNode=73248ea9...,Timecost=1.995
+info|2022-01-20 18:12:45.457165|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=5,sealerIdx=1,hash=6897a5c8...,next=6,tx=236,nodeIdx=0
+info|2022-01-20 18:12:45.459873|[g:1][g:1][STORAGE][CachedStorage]
+---------------------------------------------------------------------
+Commit block: 5 to backend storage finished, current cached block: 5
+Flush elapsed time: 0.0892s
+---------------------------------------------------------------------
+
+info|2022-01-20 18:12:46.458120|[g:1][CONSENSUS]addRawPrepare,height=6,reqIdx=2,hash=41df7ee8...,time=0
+info|2022-01-20 18:12:46.458688|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=1,nodeIdx=0,changeCycle=1,myNode=73248ea9...,timecost=0.377
+info|2022-01-20 18:12:46.459793|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=0,cur_changeCycle=1,curView=0,view=1
+info|2022-01-20 18:12:46.558826|[LEDGER]stop sealer,groupID=1
+info|2022-01-20 18:12:46.558849|[CONSENSUS][SEALER]Stop sealer module...
+info|2022-01-20 18:12:46.560317|[CONSENSUS][ConsensusEngine][Stop ConsensusEngineBase]
+info|2022-01-20 18:12:46.561194|[CONSENSUS][ConsensusEngine]ConsensusEngineBase stopped
+info|2022-01-20 18:12:46.561203|[LEDGER]sealer stopped. stop sync,groupID=1
+info|2022-01-20 18:12:46.561477|[g:1] [SYNC][id:73248ea9...]SyncMsgEngine stopped
+info|2022-01-20 18:12:46.757335|[GossipBlockStatus]stop GossipBlockStatus succ
+info|2022-01-20 18:12:47.060319|[SYNC][id:73248ea9...][g:1]SyncMaster stopped
+info|2022-01-20 18:12:47.060346|[LEDGER]sync stopped. stop event filter manager,groupID=1
+info|2022-01-20 18:12:47.159339|[EVENT][EventLogFilterManager]stop
+info|2022-01-20 18:12:47.159365|[LEDGER]event filter manager stopped. stop tx pool,groupID=1
+info|2022-01-20 18:12:47.159490|[LEDGER]removeNetworkStatHandlerByGroupID and removeGroupBandwidthLimiter for service,groupID=1
+info|2022-01-20 18:12:47.159506|[CHANNEL]removeSDKAllowListByGroupId,groupId=1
+info|2022-01-20 18:12:47.159514|[INITIALIZER]ledgerInitializer stopped
+warning|2022-01-20 18:12:47.159547|[CHANNEL]Accept failed,message=Operation canceled
+info|2022-01-20 18:12:48.159833|[INITIALIZER]ChannelRPCHttpServer deleted.
+info|2022-01-20 18:12:48.160009|[INITIALIZER]JsonrpcHttpServer deleted.
+info|2022-01-20 18:12:48.160018|[INITIALIZER]RPCInitializer stopped
+error|2022-01-20 18:12:48.160043|[NETWORK][Host]Error: system:125
+info|2022-01-20 18:12:48.160086|[NETWORK][Host]Host exit
+info|2022-01-20 18:12:48.160297|[INITIALIZER]P2PInitializer stopped
+info|2022-01-20 18:12:48.160310|[LEDGER]stop sealer,groupID=1
+info|2022-01-20 18:12:48.160317|[LEDGER]sealer stopped. stop sync,groupID=1
+info|2022-01-20 18:12:48.160325|[g:1] [SYNC][id:73248ea9...]SyncMsgEngine stopped
+info|2022-01-20 18:12:48.160333|[GossipBlockStatus]GossipBlockStatus already stopped
+info|2022-01-20 18:12:48.160338|[SYNC][id:73248ea9...][g:1]SyncMaster stopped
+info|2022-01-20 18:12:48.160341|[LEDGER]sync stopped. stop event filter manager,groupID=1
+info|2022-01-20 18:12:48.160344|[LEDGER]event filter manager stopped. stop tx pool,groupID=1
+info|2022-01-20 18:12:48.160350|[LEDGER]removeNetworkStatHandlerByGroupID and removeGroupBandwidthLimiter for service,groupID=1
+info|2022-01-20 18:12:48.160361|[g:1][STORAGE][CachedStorage]Stopping flushStorage thread
+info|2022-01-20 18:12:49.061470|[g:1][STORAGE][CachedStorage]flushStorage thread stopped.
+info|2022-01-20 18:12:49.061496|[DBINITIALIZER] storage stopped
+info|2022-01-20 18:12:49.070901|[g:1] [SYNC][id:73248ea9...]SyncMsgEngine stopped
+info|2022-01-20 18:12:49.070919|[GossipBlockStatus]GossipBlockStatus already stopped
+info|2022-01-20 18:12:49.070924|[SYNC][id:73248ea9...][g:1]SyncMaster stopped
+info|2022-01-20 18:12:49.070939|[g:1] [SYNC][id:73248ea9...]SyncMsgEngine stopped

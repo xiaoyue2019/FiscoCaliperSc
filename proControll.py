@@ -9,7 +9,7 @@ import sys,os
 还有很多地址需要修改哦~
 """
 
-fileName = r'./docker-compose.yaml'
+fileName = r'./caliper-benchmarks/docker-compose.yaml'
 
 #--------------------------------confi.yaml--------------------------------#
 configYamldata = """
@@ -29,7 +29,7 @@ test:
     - type: fixed-rate
       opts:
         tps: 1300
-    callback: SC0-set.js
+    callback: set.js
 monitor:
   type:
   - docker
@@ -131,7 +131,7 @@ addData = """
       - "{}:{}"
     working_dir: /data
     volumes:
-      - /root/benchmarks/xiaoyuetest/nodes/127.0.0.1/node{}/:/data
+      - ./nodes/127.0.0.1/node{}/:/data
     deploy:
       resources:
           limits:
@@ -140,7 +140,7 @@ addData = """
           reservations:
               # cpus: '{}'
               memory: {}M
-    container_name: node{}
+    container_name: xynode{}
     command: /usr/local/bin/fisco-bcos -c config.ini
     {}
 """
@@ -160,7 +160,7 @@ def usage():
     usagetext = usagetext + "\teg: default allocation, 5node limcpu0.3 limmemo 251 ... , use cmdline:\n\n"
     usagetext = usagetext + "\tpython3 proControll.py 3 0.3 251 0.1 201 1000\n"
     
-    usagetext = usagetext + "\t     「如需添加配置参数，则4个选填参数均需填」\n"
+    usagetext = usagetext + "\t     「如需添加配置参数，则5个选填参数均需填」\n"
 
     print(usagetext)
 
@@ -170,14 +170,14 @@ def fixConfigyaml(nodeNum,txNumber,configYamldata):
   for i in range(int(nodeNum)):
     insertData+="      - node{}".format(i)+"\n"
   configYamldata = configYamldata.format(txNumber,insertData)
-  with open("./config.yaml","w") as w:
+  with open("./caliper-benchmarks/config.yaml","w") as w:
     w.write(configYamldata)
 
 
 def main(argv):
     """主函数"""
 
-    os.system("rm -rf ./nodes")
+    os.system("rm -rf ./caliper-benchmarks/nodes")
 
     if argv[0] == "help" or argv[0]== "hp":
         usage()
@@ -201,11 +201,11 @@ def main(argv):
         except Exception:
           txNumber = 1000
 
-    os.system("bash build_chain.sh -l 127.0.0.1:{} -p 30700,20700,7545".format(nodeNum))
+    os.system("cd ./caliper-benchmarks/ && bash build_chain.sh -l 127.0.0.1:{} -p 30800,20800,7645".format(nodeNum))
 
-    channelPor = 20700
-    rpcPort = 7545
-    p2pPort = 30700
+    channelPor = 20800
+    rpcPort = 7645
+    p2pPort = 30800
 
     fixConfigyaml(nodeNum,txNumber,configYamldata)
     
@@ -219,7 +219,7 @@ def main(argv):
 
     fixConfig(nodeNum)
 
-    os.system("npx caliper benchmark run --caliper-workspace caliper-benchmarks --caliper-benchconfig /root/benchmarks/xiaoyuetest/config.yaml  --caliper-networkconfig /root/benchmarks/xiaoyuetest/fisco.json")
+    os.system("npx caliper benchmark run --caliper-workspace caliper-benchmarks --caliper-benchconfig config.yaml  --caliper-networkconfig fisco.json")
 
     _recoverDefault(nodeNum)
 
@@ -227,7 +227,7 @@ def _recoverDefault(nodeNum):
     with open(fileName, 'w') as f:
         f.write(defaultData)
     for i in range(int(nodeNum)):
-        with open("./nodes/127.0.0.1/node{}/config.ini".format(i),"w") as f:
+        with open("./caliper-benchmarks/nodes/127.0.0.1/node{}/config.ini".format(i),"w") as f:
             f.write("https://x1a0.net")
 
 def _insertOne(nodeId1,channelPor,
@@ -282,11 +282,11 @@ def fixConfig(nodeNum):
     basedata = ""
 
     for i in range(int(nodeNum)):
-        basedata+=baseline.format(i,30700+i)+"\n"
+        basedata+=baseline.format(i,30800+i)+"\n"
 
     for i in range(int(nodeNum)):
-        insertconfig = configData.format(20700+i,7545+i,30700+i,basedata)
-        with open("./nodes/127.0.0.1/node{}/config.ini".format(i),"w") as f:
+        insertconfig = configData.format(20800+i,7645+i,30800+i,basedata)
+        with open("./caliper-benchmarks/nodes/127.0.0.1/node{}/config.ini".format(i),"w") as f:
             f.write(insertconfig)
 
 
